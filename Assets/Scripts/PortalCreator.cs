@@ -20,13 +20,7 @@ public class PortalCreator: MonoBehaviour {
 
 			int numPortals = room.folders.Count + 1;
 
-			//float dtheta = (float)(2 * Math.PI / numPortals);
-			//float radius = 5;
-			//float theta = 0;
 			for (int i = 0; i < numPortals; i++) {
-				//float x1 = (float)(0 + radius * Math.Cos(theta));
-				//float z1 = (float)(0 + radius * Math.Sin(theta));
-				//theta += dtheta;
 				var instance = Instantiate(portalPrefab, new Vector3(0, 0, 0), Quaternion.identity);
 				Portal portalScript = instance.GetComponent<Portal>();
 				var textMesh = instance.GetComponentInChildren<TextMesh>();

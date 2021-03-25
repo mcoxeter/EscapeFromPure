@@ -14,10 +14,7 @@ public class GameState {
 	public void Load(DirectoryStructure directoryStructure) {
 		roomMap = new Dictionary<string, Room>();
 		foreach (DirEntry entry in directoryStructure.dirEntries) {
-			if(entry.path.StartsWith("../pure-core")) {
-				entry.path = entry.path.Replace("../", "");
-				add(entry);
-			}
+			add(entry);
 		}
 
 		NewGame();
