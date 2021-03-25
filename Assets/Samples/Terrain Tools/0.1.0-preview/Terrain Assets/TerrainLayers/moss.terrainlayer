@@ -9,7 +9,7 @@ TerrainLayer:
   m_Name: moss
   m_DiffuseTexture: {fileID: 2800000, guid: 08a40111d935b004e99abe3a474e7828, type: 3}
   m_NormalMapTexture: {fileID: 2800000, guid: 012d26d22d1eb364c83e24880b593b12, type: 3}
-  m_MaskMapTexture: {fileID: 2800000, guid: ff77b812a1621e74694371cb173618ef, type: 3}
+  m_MaskMapTexture: {fileID: 2800000, guid: b9259e147c8f3814fa8ee292547ff6e3, type: 3}
   m_TileSize: {x: 10, y: 10}
   m_TileOffset: {x: 0, y: 0}
   m_Specular: {r: 0, g: 0, b: 0, a: 0}
