@@ -14,14 +14,22 @@ public class GameState {
 	public void Load(DirectoryStructure directoryStructure) {
 		roomMap = new Dictionary<string, Room>();
 		foreach (DirEntry entry in directoryStructure.dirEntries) {
-			add(entry);
+			if(entry.path.StartsWith("../pure-core")) {
+				entry.path = entry.path.Replace("../", "");
+				add(entry);
+			}
 		}
 
 		NewGame();
 	}
 
 	public void NewGame() {
-		currentRoom = roomList[random.Next(0, roomList.Count)];
+		var fileCount = 0;
+
+		do {
+			currentRoom = roomList[random.Next(0, roomList.Count)];
+			fileCount = currentRoom.files.Count;
+		} while (fileCount == 0);		
 	}
 
 	private void add(DirEntry entry) {
