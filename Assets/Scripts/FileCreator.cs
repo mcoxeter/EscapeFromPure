@@ -29,8 +29,8 @@ public class FileCreator : MonoBehaviour
 				FileScript fileScript = instance.GetComponent<FileScript>();
 				fileScript.fileName = room.files[i].name;
 
-				if ( size > 20) {
-					size = 20;
+				if ( size > 6) {
+					size = 6;
 				}
 
 				instance.transform.localScale = new Vector3(1 * size, 1 * size, 1 * size);

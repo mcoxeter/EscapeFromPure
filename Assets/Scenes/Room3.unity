@@ -5222,7 +5222,7 @@ Transform:
   m_LocalScale: {x: 0.2435839, y: 0.2435839, z: 0.2374943}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &711650960
 GameObject:
@@ -5885,6 +5885,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4515458666895642074, guid: 3e8f4f15ccd33dd4e8ea2dc9848edf9e, type: 3}
+      propertyPath: Radius
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6682413962037833603, guid: 3e8f4f15ccd33dd4e8ea2dc9848edf9e, type: 3}
       propertyPath: m_Name
       value: CircularLayout
@@ -5912,7 +5916,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 717675742705277150, guid: 4b46a7816660cba4d8a89f1d14e0c137, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 717675742705277150, guid: 4b46a7816660cba4d8a89f1d14e0c137, type: 3}
       propertyPath: m_AnchorMax.x

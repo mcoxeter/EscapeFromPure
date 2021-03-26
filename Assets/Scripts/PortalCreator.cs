@@ -16,7 +16,7 @@ public class PortalCreator: MonoBehaviour {
 
 			string parentRoomKey = room.GetParentRoomKey();			
 
-			int numPortals = room.folders.Count + parentRoomKey == "" ? 0 : 1;
+			int numPortals = room.folders.Count + (parentRoomKey == "" ? 0 : 1);
 
 			for (int i = 0; i < numPortals; i++) {
 				var instance = Instantiate(portalPrefab, new Vector3(0, 0, 0), Quaternion.identity);

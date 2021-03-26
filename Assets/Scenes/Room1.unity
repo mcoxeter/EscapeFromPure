@@ -522,6 +522,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4515458666895642074, guid: 3e8f4f15ccd33dd4e8ea2dc9848edf9e, type: 3}
+      propertyPath: Radius
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6682413962037833603, guid: 3e8f4f15ccd33dd4e8ea2dc9848edf9e, type: 3}
       propertyPath: m_Name
       value: CircularLayout

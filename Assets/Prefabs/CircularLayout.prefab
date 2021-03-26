@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetTagName: Portal
-  Radius: 5
+  Radius: 6

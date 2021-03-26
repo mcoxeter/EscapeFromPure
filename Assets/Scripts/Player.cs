@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
 			if (destination.roomPath == "") {
 				WinRoom();
 			} else {
+				State.currentFile = "";
 				if (!State.roomMap.ContainsKey(destination.roomPath)) {
 					Debug.LogError("destination.roomPath not found in roomMap: " + destination.roomPath, destination);
 				}
