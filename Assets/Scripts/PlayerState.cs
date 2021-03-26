@@ -6,6 +6,7 @@ public class GameState {
 	public Dictionary<string, Room> roomMap = null;
 	private List<Room> roomList = new List<Room>();
 	public Room currentRoom = null;
+	public string currentFile = "";
 
 	public int SceneIndex = 0;
 
@@ -24,7 +25,7 @@ public class GameState {
 		var fileCount = 0;
 
 		do {
-			currentRoom = roomList[random.Next(0, roomList.Count)];
+			currentRoom = roomMap["pure-core"];
 			fileCount = currentRoom.files.Count;
 		} while (fileCount == 0);		
 	}

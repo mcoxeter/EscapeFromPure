@@ -26,6 +26,12 @@ public class FileCreator : MonoBehaviour
 			{
 				var instance = Instantiate(filePrefab, new Vector3(x, y, z), Quaternion.identity);
 				float size = room.files[i].size / 1000f;
+				FileScript fileScript = instance.GetComponent<FileScript>();
+				fileScript.fileName = room.files[i].name;
+
+				if ( size > 20) {
+					size = 20;
+				}
 
 				instance.transform.localScale = new Vector3(1 * size, 1 * size, 1 * size);
 				var textMesh = instance.GetComponentInChildren<TextMesh>();

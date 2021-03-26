@@ -18,7 +18,6 @@ public class Player : MonoBehaviour
 	}
 
 	private void OnTriggerEnter(Collider other) {
-
 		Portal destination = other.gameObject.GetComponent<Portal>();
 		if (destination != null) {
 			if (destination.roomPath == "") {
@@ -31,6 +30,15 @@ public class Player : MonoBehaviour
 
 				NextRoom();
 			}
+		}
+
+		if(other.gameObject.name == "FallStop") {
+			SceneManager.LoadScene(State.SceneIndex);
+		}
+
+		if (other.gameObject.name.StartsWith("Sphere")) {
+			FileScript fileScript = other.gameObject.GetComponent<FileScript>();
+			Player.State.currentFile = fileScript.fileName;
 		}
 	}
 
