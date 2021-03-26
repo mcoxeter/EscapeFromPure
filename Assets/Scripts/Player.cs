@@ -63,8 +63,8 @@ public class Player : MonoBehaviour
 		Application.Quit();
 	}
 
-	private void WinRoom() {
+	public void WinRoom() {
 		State.SceneIndex = 4;
-		SceneManager.LoadScene("Win");
+		SceneManager.LoadScene(State.SceneIndex);
 	}
 }
